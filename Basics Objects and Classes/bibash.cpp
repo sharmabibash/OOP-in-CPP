@@ -73,8 +73,84 @@ note : put the semicolon at the end of class.
 
 /* We must have study about Access Modifiers
 1. Private : data and methods accessible inside class
-Note : By Default 
+
+Note : By Default in c++ all the things are private like, attributes/properties and member function
+member function :---> which is member of that class.
+
 2. Public : data and methods accessible to everyone
+Note :- If we set class as public then it will accessible outside class
+
 3. Protected : data and methods accessible inside class and to its derived class 
+Note :- It is mostly used for inheritance.
+Inheritance :---> one class send its properties/attributes to another class this process or in that case we use protected
 */
+
+/*Example 2 : Used Private and Public*/
+// #include<iostream>
+// #include<string>
+// using namespace std;
+
+// class Employee {
+// private:
+//   double salary;
+// public:      
+// string name;
+// string departmet;
+
+// }; 
+// int main(){
+//     Employee E1;
+//     Employee E2;
+//     E1.name="Bibash";
+//     E2.departmet="Computer science";
+//     // E1.salary= 2000;
+
+//     cout<<E1.name<<endl;
+//     cout<<E2.departmet<<endl;
+//     return 0;
+// }
+
+
+/* In above example salary is private which is unaccessible outside the class
+But we can make it accessible from getter and setter function.
+*/
+
+/*Example : Setter and Getter function for Private*/
+/*#include<iostream>
+#include<string>
+using namespace std;
+
+class Employee {
+private:
+  double salary;
+public:
+string name;
+string departmet;
+
+//function called methods
+
+//1 setter function 
+void setSalary(double s){
+    salary=s;
+}
+
+//2 getter function
+double getSalary(){
+    return salary;
+}
+
+}; 
+int main(){
+    Employee E1;
+    Employee E2;
+    E1.name="Bibash";
+    E1.departmet="Computer science";
+    // E1.salary= 2000;
+    E1.setSalary(2000);
+
+    cout<<E1.name<<endl;
+    cout<<E1.departmet<<endl;
+    cout<<E1.getSalary()<<endl;
+    return 0;
+}*/
 
